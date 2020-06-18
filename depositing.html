@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Smart Safe</title>
+    <link rel="icon" type="image/x-icon" href="./img/favicon.ico">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Mitr:wght@300&display=swap" rel="stylesheet">
+    <link href="https://use.fontawesome.com/releases/v5.0.1/css/all.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Mitr', sans-serif;
+        }
+        .block{
+            height: 20em;
+            width: 100%;
+            position: relative;
+            background: linear-gradient(to right, #016ABC 0%, #8bcbff 100%);
+        }
+        .block:after{
+            content: '';
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            background: inherit;
+            z-index: -1;
+            bottom: 0;
+            transform-origin: right bottom;
+            transform: skewY(-7deg);
+        
+        }
+
+        .social {
+            position: relative;
+            height: 3em;
+            width: 13.5em;
+            margin: 150px 450px;
+        }
+
+        .bg-blue{
+            background-color: #94c2f1c4;
+        }
+
+        .fontfooter{
+            font-size: 30px;
+        }
+
+        .fontbutton{
+            font-size: 40px;
+        }
+
+
+
+    </style>
+</head>
+<body>
+    
+        <div class="block">
+            <div class="container pt-5">
+                <img src="./img/lock.png" height="80px"> <span class="mt-3" style=" font-size: 3em;color:rgb(255, 255, 255);">Smart Safe</span>
+            </div>
+        </div>
+    <div class="container" style="margin-top: -5em;">
+        
+        <div class="card bg-light" style="height: 30em;border-radius:3em">
+            <div class="card-body">
+                <h1 class="text-center mt-3" style="font-size: 50px;">เบอร์โทรศัพท์</h1>
+                 <div class="form-group mt-5">
+                     <div class="input-group input-group-lg">
+                         <input type="tel" max="10" class="form-control">
+                     </div>
+                 </div>
+                 <div class="row mt-5">
+                     <div class="col-12">
+                         <a href="pin.html">
+                            <button type="button" class="btn btn-success btn-lg btn-block fontbutton">
+                                ตกลง
+                            </button>
+                         </a>
+                         
+                     </div>
+                 </div>
+            </div>
+        </div>
+  
+
+        <nav class="navbar navbar-light bg-blue fixed-bottom d-flex flex-row justify-content-around">
+            <div class="p-1 text-center">
+                <a href="index.html">
+                    <img src="./img/site.png" height="35px">
+                    <p class="m-0 fontfooter">หน้าแรก</p>
+                </a>
+            </div>
+            <div class="p-1 text-center">
+                <img src="./img/confirm.png" height="35px">
+                <p class="m-0 fontfooter">การใช้งาน</p>
+            </div>
+            <div class="p-1 text-center">
+                <img src="./img/clock.png" height="35px">
+                <p class="m-0 fontfooter">ประวัติ</p>
+            </div>
+        </nav>
+    </div>
+
+</body>
+</html>
