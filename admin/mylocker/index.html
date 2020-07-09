@@ -1,0 +1,279 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Jekyll v4.0.1">
+    <title>Smart Safe</title>
+    <link rel="icon" type="image/x-icon" href="https://teerasakgame.github.io/locker/img/favicon.ico">
+    <link rel="stylesheet" href="Smart%20Safe_files/bootstrap.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <script src="Smart%20Safe_files/jquery-3.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="Smart%20Safe_files/popper.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="Smart%20Safe_files/bootstrap.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    <link href="Smart%20Safe_files/css2.css" rel="stylesheet">
+    <link href="Smart%20Safe_files/all.css" rel="stylesheet">
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/4.5/examples/dashboard/">
+
+    <!-- Bootstrap core CSS -->
+<link href="../assets/dist/css/bootstrap.css" rel="stylesheet">
+
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+    </style>
+    <!-- Custom styles for this template -->
+    <link href="dashboard.css" rel="stylesheet">
+  </head>
+  <body>
+    <nav class="navbar navbar-primary sticky-top bg-primary flex-md-nowrap p-0 shadow">
+      <a class="navbar-brand col-md-3 col-lg-2 mr-0 px-3 text-white" href="#">
+        <img src="Smart%20Safe_files/lock.png" height="40px">
+        Smart Safe
+      </a>
+      <button class="navbar-toggler position-absolute d-md-none collapsed" type="button" data-toggle="collapse" data-target="#sidebarMenu" aria-controls="sidebarMenu" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <input class="form-control form-control-primary w-100" type="text" placeholder="Search" aria-label="Search">
+      <ul class="navbar-nav px-3">
+        <li class="nav-item text-nowrap">
+          <a class="nav-link text-white" href="#">Sign out</a>
+        </li>
+      </ul>
+    </nav>
+
+<div class="container-fluid">
+  <div class="row">
+    <nav id="sidebarMenu" class="col-md-3 col-lg-2 d-md-block bg-light sidebar collapse">
+      <div class="sidebar-sticky pt-3">
+        <h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+          <span>จัดการข้อมูล</span>
+        </h6>
+        <ul class="nav flex-column">
+          <li class="nav-item">
+            <a class="nav-link active" href="index.html">
+              <span data-feather="shopping-cart"></span>
+              จองตู้ <span class="sr-only">(current)</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="index2.html">
+              <span data-feather="users"></span>
+              ผู้ใช้งาน
+            </a>
+          </li>
+        </ul>
+
+        <h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+          <span>ข้อมูลหลัก</span>
+        </h6>
+        <ul class="nav flex-column">
+          <li class="nav-item">
+            <a class="nav-link" href="index3.html">
+              <span data-feather="package"></span>
+              ตู้ล็อกเกอร์
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="index4.html">
+              <span data-feather="map-pin"></span>
+              อาคาร
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="index5.html">
+              <span data-feather="user"></span>
+              ผู้ดูแล
+            </a>
+          </li>
+        </ul>
+
+        <h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+          <span>รายงาน</span>
+        </h6>
+        <ul class="nav flex-column mb-2">
+          <li class="nav-item">
+            <a class="nav-link" href="index6.html">
+              <span data-feather="bar-chart-2"></span>
+              Dashboard
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="index7.html">
+              <span data-feather="file-text"></span>
+              รายการการใช้งาน
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="index8.html">
+              <span data-feather="file-text"></span>
+              สถิตการจำนวนใช้งาน
+            </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-md-4">
+      <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+        <h1 class="h2">จองตู้</h1>
+        <div class="btn-toolbar mb-2 mb-md-0">
+          <button type="button" class="btn btn-sm btn-outline-primary">
+            <a href="index-add.html">
+            <span data-feather="plus-square"></span>
+            เพิ่ม
+            </a>
+          </button>
+        </div>
+      </div>
+
+      <div class="table-responsive">
+        <table class="table table-striped table-sm">
+          <thead>
+            <tr>
+              <th>#</th>
+              <th>วันเวลาที่นำของเข้า</th>
+              <th>วันเวลาที่นำของออก</th>
+              <th>เบอร์โทรศัพท์ผู้จอง</th>
+              <th>เบอร์ตู้ล็อกเกอร์</th>
+              <th>อาคาร</th>
+              <th>สถานะ</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>
+                <a href="index-show.html">1009</a>
+              </td>
+              <td>18/06/2563 10:12 น.</td>
+              <td>-</td>
+              <td>08x-xxx-xxxx</td>
+              <td>L01234</td>
+              <td>CC</td>
+              <td>กำลังใช้งาน</td>
+            </tr>
+            <tr>
+              <td>
+                <a href="index-show.html">1008</a>
+              </td>
+              <td>18/06/2563 10:12 น.</td>
+              <td>-</td>
+              <td>08x-xxx-xxxx</td>
+              <td>L01234</td>
+              <td>CC</td>
+              <td>กำลังใช้งาน</td>
+            </tr>
+            <tr>
+              <td>
+                <a href="index-show.html">1008</a>
+              </td>
+              <td>18/06/2563 10:12 น.</td>
+              <td>18/06/2563 17:00 น.</td>
+              <td>08x-xxx-xxxx</td>
+              <td>L01234</td>
+              <td>CC</td>
+              <td>คืนตู้</td>
+            </tr>
+            <tr>
+              <td>
+                <a href="index-show.html">1007</a>
+              </td>
+              <td>18/06/2563 10:12 น.</td>
+              <td>-</td>
+              <td>08x-xxx-xxxx</td>
+              <td>L01234</td>
+              <td>CC</td>
+              <td>กำลังใช้งาน</td>
+            </tr>
+            <tr>
+              <td>
+                <a href="index-show.html">1006</a>
+              </td>
+              <td>18/06/2563 10:12 น.</td>
+              <td>18/06/2563 17:00 น.</td>
+              <td>08x-xxx-xxxx</td>
+              <td>L01234</td>
+              <td>CC</td>
+              <td>คืนตู้</td>
+            </tr>
+            <tr>
+              <td>
+                <a href="index-show.html">1005</a>
+              </td>
+              <td>18/06/2563 10:12 น.</td>
+              <td>18/06/2563 17:00 น.</td>
+              <td>08x-xxx-xxxx</td>
+              <td>L01234</td>
+              <td>CC</td>
+              <td>คืนตู้</td>
+            </tr>
+            <tr>
+              <td>
+                <a href="index-show.html">1004</a>
+              </td>
+              <td>18/06/2563 10:12 น.</td>
+              <td>18/06/2563 17:00 น.</td>
+              <td>08x-xxx-xxxx</td>
+              <td>L01234</td>
+              <td>CC</td>
+              <td>คืนตู้</td>
+            </tr>
+            <tr>
+              <td>
+                <a href="index-show.html">1003</a>
+              </td>
+              <td>18/06/2563 10:12 น.</td>
+              <td>18/06/2563 17:00 น.</td>
+              <td>08x-xxx-xxxx</td>
+              <td>L01234</td>
+              <td>CC</td>
+              <td>คืนตู้</td>
+            </tr>
+            <tr>
+              <td>
+                <a href="index-show.html">1002</a>
+              </td>
+              <td>18/06/2563 10:12 น.</td>
+              <td>18/06/2563 17:00 น.</td>
+              <td>08x-xxx-xxxx</td>
+              <td>L01234</td>
+              <td>CC</td>
+              <td>คืนตู้</td>
+            </tr>
+            <tr>
+              <td>
+                <a href="index-show.html">1001</a>
+              </td>
+              <td>18/06/2563 10:12 น.</td>
+              <td>18/06/2563 17:00 น.</td>
+              <td>08x-xxx-xxxx</td>
+              <td>L01234</td>
+              <td>CC</td>
+              <td>คืนตู้</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </main>
+  </div>
+</div>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+      <script>window.jQuery || document.write('<script src="../assets/js/vendor/jquery.slim.min.js"><\/script>')</script><script src="../assets/dist/js/bootstrap.bundle.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/feather-icons/4.9.0/feather.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.3/Chart.min.js"></script>
+        <script src="dashboard.js"></script></body>
+</html>
