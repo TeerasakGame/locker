@@ -55,6 +55,19 @@
             font-size: 40px;
         }
 
+         .scrollbar-thin {
+            scrollbar-width: thin;
+            height: 20em;
+            /* width: 1000px; */
+            /* overflow-y: scroll; */
+            overflow-x: scroll;
+         }
+
+        .modal-dialog {
+            max-width: 800px;
+            margin: 1.75rem auto;
+        }
+
 
 
     </style>
@@ -88,45 +101,7 @@
                     data-target="#exampleModal">
                     ข้อตกลงการใช้บริการ</br>
                 </button>
-                <!-- Modal -->
-                <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog"
-                    aria-labelledby="exampleModalLabel" aria-hidden="true">
-                    <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <h5 class="modal-title" id="exampleModalLabel" style="font-size: 40px;">
-                                    ข้อตกลงการใช้บริการ</h5>
-                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                    <span aria-hidden="true">&times;</span>
-                                </button>
-                            </div>
-                            <div class="modal-body">
-                               <ul>
-                                   <li>สามารถใช้บริการได้ตั้งแต่เวลา 05:00 – 19:00 ของทุกวัน</li>
-                                   <li>เจ้าของหมายเลขโทรศัพท์ที่ใช้ในการลงทะเบียนใช้บริการ
-                                       ถือเป็นผู้รับผิดชอบในการใช้งานที่เกิดขึ้น</li>
-                                   <li>ไม่นำอาหาร เครื่องดื่ม สารเคมี หรือวัตถุใดๆ
-                                       ที่อาจส่งผลให้เกิดความเสียหายแก่ตู้มาจัดเก็บ</li>
-                                   <li>สำนักงานฯ สงวนสิทธิ์ในการตรวจสอบทรัพย์สินภายในตู้
-                                       หากพบหรือสงสัยได้ว่าเป็นวัตถุต้องสงสัย</li>
-                                   <li>สำนักงานฯ สงวนสิทธิ์ในการตรวจสอบและเคลียร์ตู้หลังเวลาให้บริการ 19:00 น. ของทุกวัน
-                                   </li>
-                                   <li>ท่านสามารถติดต่อรับของหรือพัสดุภายหลัง ได้ที่ xxxxxxxxx</li>
-                                   <li>หากมีปัญหาในการใช้งาน สามารถติดต่อได้ที่ xxx-xxx-xxxx ต่อ xxxx
-                                       เฉพาะในวันและเวลาทำการ(เวลาราชการ)</li>
-                                   <li>กรณีเกิดความเสียหายอันเกิดจากการผู้ใช้บริการ
-                                       สำนักงานขอเรียกเก็บค่าใช้จ่ายในการซ่อมแซม/แก้ไข
-                                       ตามค่าใช้จ่ายที่เกิดขึ้นจริง
-                                   </li>
-                               </ul>
-                            </div>
-                            <!-- <div class="modal-footer">
-                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                                <button type="button" class="btn btn-primary">Save changes</button>
-                            </div> -->
-                        </div>
-                    </div>
-                </div>
+              
 
 
 
@@ -156,9 +131,11 @@
             </div>
         </div>
 
-        <div style="background-color: #94c2f1c4;height: 20em;border-radius: 30px;margin-top: 20px;">
+        <div style="background-color: #94c2f1c4;border-radius: 30px;margin-top: 20px;"
+            class="scrollbar-thin">
             <h1 style="margin: 30px;" class="mt-5">Service</h1>
-            <div class=" text-center" style="overflow: auto;width: 200px;">
+            <div class=" text-center" >
+                <img src="./img/one.png" height="150px">
                 <img src="./img/one.png" height="150px">
                 <img src="./img/one.png" height="150px">
                 <img src="./img/one.png" height="150px">
@@ -207,3 +184,42 @@
 
 </body>
 </html>
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+      aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+          <div class="modal-content">
+              <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel" style="font-size: 40px;">
+                      ข้อตกลงการใช้บริการ</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                  </button>
+              </div>
+              <div class="modal-body">
+                  <ul>
+                      <li>สามารถใช้บริการได้ตั้งแต่เวลา 05:00 – 19:00 ของทุกวัน</li>
+                      <li>เจ้าของหมายเลขโทรศัพท์ที่ใช้ในการลงทะเบียนใช้บริการ
+                          ถือเป็นผู้รับผิดชอบในการใช้งานที่เกิดขึ้น</li>
+                      <li>ไม่นำอาหาร เครื่องดื่ม สารเคมี หรือวัตถุใดๆ
+                          ที่อาจส่งผลให้เกิดความเสียหายแก่ตู้มาจัดเก็บ</li>
+                      <li>สำนักงานฯ สงวนสิทธิ์ในการตรวจสอบทรัพย์สินภายในตู้
+                          หากพบหรือสงสัยได้ว่าเป็นวัตถุต้องสงสัย</li>
+                      <li>สำนักงานฯ สงวนสิทธิ์ในการตรวจสอบและเคลียร์ตู้หลังเวลาให้บริการ 19:00 น. ของทุกวัน
+                      </li>
+                      <li>ท่านสามารถติดต่อรับของหรือพัสดุภายหลัง ได้ที่ xxxxxxxxx</li>
+                      <li>หากมีปัญหาในการใช้งาน สามารถติดต่อได้ที่ xxx-xxx-xxxx ต่อ xxxx
+                          เฉพาะในวันและเวลาทำการ(เวลาราชการ)</li>
+                      <li>กรณีเกิดความเสียหายอันเกิดจากการผู้ใช้บริการ
+                          สำนักงานขอเรียกเก็บค่าใช้จ่ายในการซ่อมแซม/แก้ไข
+                          ตามค่าใช้จ่ายที่เกิดขึ้นจริง
+                      </li>
+                  </ul>
+              </div>
+              <!-- <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                <button type="button" class="btn btn-primary">Save changes</button>
+                            </div> -->
+          </div>
+      </div>
+  </div>
