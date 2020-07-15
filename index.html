@@ -47,6 +47,10 @@
             font-size: 30px;
         }
 
+        li {
+            font-size: 30px;
+        }
+
         .fontbutton{
             font-size: 40px;
         }
@@ -58,53 +62,83 @@
 <body>
     
         <div class="block">
-            <div class="container  pt-5">
-                <div class="row">
-                       <div class="col-7">
-                           <img src="./img/lock.png" height="80px"> <span class="mt-3"
-                               style=" font-size: 3em;color:rgb(255, 255, 255);">Smart Safe</span>
+            <div class="container-fluid pt-5">
+                <div class="row mr-3 ml-3">
+                       <div class="col-8" >
+                           <img src="./img/lock.png" height="120px" style="margin-top: -40px;">
+                           <span style=" font-size:70px;color:rgb(255, 255, 255);">Smart Safe</span>
                        </div>
-                       <div class="col-5 text-right">
-                           <img src="./img/nstda-logo-w.png" height="70px">
+                       <div class="col-4 text-right">
+                           <img src="./img/nstda-logo-w.png" height="90px">
                        </div>
                 </div>
-             
-               
             </div>
         </div>
-    <div class="container" style="margin-top: 5em;">
-        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel"
-            style="margin-top: -150px; margin-bottom: 20px;">
-            <ol class="carousel-indicators">
-                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-            </ol>
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <img src="http://www.nebero.com/wp-content/uploads/2014/05/placeholder.jpg"
-                        class="d-block w-100" alt="...">
+    <div class="container" style="margin-top: -80px">
+         <div class="card bg-light" style="height: 37em;border-radius:3em">
+             <div class="card-body">
+                 <h1 class="text-center mt-3" style="font-size: 40px;">การชำระค่าบริการ </h1>
+                 <ul>
+                    <li>สำหรับพนักงานและบุคลากรของ สวทช. คิดค่าบริการ xx บาทต่อชั่วโมง โดยเศษของชั่วโมงคิดเป็น 1 ชั่วโมง</li>
+                    <li>สำหรับบุคคลภายนอก หรือประชาชนทั่วไป คิดค่าบริการ xx บาทต่อชั่วโมง โดยเศษของชั่วโมงคิดเป็น 1
+                        ชั่วโมง</li>
+                    <li>สามารถชำระค่าบริการพร้อมรับใบเสร็จได้ที่ จุดบริการหรือเจ้าหน้าที่ ได้ที่ xxxx</li>
+                 </ul>
+                <button type="button" class="btn btn-primary btn-lg btn-block fontbutton mt-2" data-toggle="modal"
+                    data-target="#exampleModal">
+                    ข้อตกลงการใช้บริการ</br>
+                </button>
+                <!-- Modal -->
+                <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog"
+                    aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLabel" style="font-size: 40px;">
+                                    ข้อตกลงการใช้บริการ</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                               <ul>
+                                   <li>สามารถใช้บริการได้ตั้งแต่เวลา 05:00 – 19:00 ของทุกวัน</li>
+                                   <li>เจ้าของหมายเลขโทรศัพท์ที่ใช้ในการลงทะเบียนใช้บริการ
+                                       ถือเป็นผู้รับผิดชอบในการใช้งานที่เกิดขึ้น</li>
+                                   <li>ไม่นำอาหาร เครื่องดื่ม สารเคมี หรือวัตถุใดๆ
+                                       ที่อาจส่งผลให้เกิดความเสียหายแก่ตู้มาจัดเก็บ</li>
+                                   <li>สำนักงานฯ สงวนสิทธิ์ในการตรวจสอบทรัพย์สินภายในตู้
+                                       หากพบหรือสงสัยได้ว่าเป็นวัตถุต้องสงสัย</li>
+                                   <li>สำนักงานฯ สงวนสิทธิ์ในการตรวจสอบและเคลียร์ตู้หลังเวลาให้บริการ 19:00 น. ของทุกวัน
+                                   </li>
+                                   <li>ท่านสามารถติดต่อรับของหรือพัสดุภายหลัง ได้ที่ xxxxxxxxx</li>
+                                   <li>หากมีปัญหาในการใช้งาน สามารถติดต่อได้ที่ xxx-xxx-xxxx ต่อ xxxx
+                                       เฉพาะในวันและเวลาทำการ(เวลาราชการ)</li>
+                                   <li>กรณีเกิดความเสียหายอันเกิดจากการผู้ใช้บริการ
+                                       สำนักงานขอเรียกเก็บค่าใช้จ่ายในการซ่อมแซม/แก้ไข
+                                       ตามค่าใช้จ่ายที่เกิดขึ้นจริง
+                                   </li>
+                               </ul>
+                            </div>
+                            <!-- <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                <button type="button" class="btn btn-primary">Save changes</button>
+                            </div> -->
+                        </div>
+                    </div>
                 </div>
-                <div class="carousel-item">
-                    <img src="http://www.nebero.com/wp-content/uploads/2014/05/placeholder.jpg" class="d-block w-100"
-                        alt="...">
-                </div>
-            </div>
-            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="sr-only">Previous</span>
-            </a>
-            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="sr-only">Next</span>
-            </a>
-        </div>
 
-        <div class="row" style="margin-top: 10em;">
+
+
+             </div>
+         </div>
+
+        <div class="row" style="margin-top: 20px;">
             <div class="col-12">
                 <a href="depositing.html">
                 <button type="button" class="btn btn-success btn-lg btn-block fontbutton">
                     เริ่มการใช้งาน</br>
-                    Start
+                    <span style="font-size: 35px;">Start</span>
                 </button>
                 </a>
             </div>
@@ -115,28 +149,35 @@
                 <a href="out.html">
                     <button type="button" class="btn btn-warning btn-lg btn-block fontbutton">
                         จบการใช้งาน</br>
-                        Finish
+                        <span style="font-size: 35px;">Finish</span>
                     </button>
                 </a>
                 
             </div>
         </div>
 
-        <div style="background-color: #94c2f1c4;height: 20em;border-radius: 30px;margin-top: 13em;">
+        <div style="background-color: #94c2f1c4;height: 20em;border-radius: 30px;margin-top: 20px;">
             <h1 style="margin: 30px;" class="mt-5">Service</h1>
-            <div class="row text-center" >
-                <div class="col-3 ">
+            <div class=" text-center" style="overflow: auto;width: 200px;">
+                <img src="./img/one.png" height="150px">
+                <img src="./img/one.png" height="150px">
+                <img src="./img/one.png" height="150px">
+                <img src="./img/one.png" height="150px">
+                <!-- <div class="">
                     <img src="./img/one.png" height="150px">
                 </div>
-                 <div class="col-3 text-center">
+                 <div class="">
                      <img src="./img/two.png" height="150px">
                  </div>
-                 <div class="col-3 text-center">
+                 <div class="">
                      <img src="./img/three.png" height="150px">
                  </div>
-                 <div class="col-3 text-center">
+                 <div class="">
                      <img src="./img/four.png" height="150px">
                  </div>
+                 <div class="">
+                     <img src="./img/four.png" height="150px">
+                 </div> -->
             </div>
         </div>
 
@@ -145,20 +186,20 @@
         <nav class="navbar navbar-light bg-blue fixed-bottom d-flex flex-row justify-content-around">
             <div class="p-1 text-center">
                 <a href="index.html">
-                    <img src="./img/site.png" height="35px">
-                    <p class="m-0 fontfooter">หน้าแรก</p>
+                    <img src="./img/site.png" height="60px;">
+                    <p class="m-0 fontfooter" style="font-size:40px;">หน้าแรก</p>
                 </a>
             </div>
             <div class="p-1 text-center">
                 <a href="online.html">
-                    <img src="./img/confirm.png" height="35px">
-                    <p class="m-0 fontfooter">การใช้งาน</p>
+                    <img src="./img/confirm.png" height="60px">
+                    <p class="m-0 fontfooter" style="font-size: 40px;">การใช้งาน</p>
                 </a>
             </div>
             <div class="p-1 text-center">
                 <a href="history.html">
-                    <img src="./img/clock.png" height="35px">
-                    <p class="m-0 fontfooter">ประวัติ</p>
+                    <img src="./img/clock.png" height="60px">
+                    <p class="m-0 fontfooter" style="font-size: 40px;">ประวัติ</p>
                 </a>
             </div>
         </nav>
