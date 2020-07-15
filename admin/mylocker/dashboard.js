@@ -12,23 +12,33 @@
     type: 'line',
     data: {
       labels: [
-        'Sunday',
-        'Monday',
-        'Tuesday',
-        'Wednesday',
-        'Thursday',
-        'Friday',
-        'Saturday'
+        'มกราคม',
+        'กุมภาพันธ์',
+        'มีนาคม',
+        'เมษายน',
+        'พฤษภาคม',
+        'มิถุนายน',
+        'กรกฎาคม',
+        'สิงหาคม',
+        'กันยายน',
+        'ตุลาคม',
+        'พฤศจิกายน',
+        'ธันวาคม'
       ],
       datasets: [{
         data: [
           15339,
           21345,
-          18483,
-          24003,
-          23489,
-          24092,
-          12034
+          12345,
+          5632,
+          18742,
+          20092,
+          12034,
+          null,
+          null,
+          null,
+          null,
+          
         ],
         lineTension: 0,
         backgroundColor: 'transparent',
